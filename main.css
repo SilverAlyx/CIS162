@@ -10,7 +10,18 @@ html {
 body {
 	background-color: lavender;
     font-family: Verdana, Geneva, sans-serif
+} 
+
+header {
+  text-align: center;
 }
+
+header img {
+  display: inline-block;
+  width: 85%;
+  margin: 0 auto;
+} 
+
 h1, h2, h3 {
     color: mediumpurple;
 	font-size: 36px;
@@ -39,16 +50,80 @@ ul {
     color: mediumpurple;
 	font-size: 24px;
     text-align: justify
-}
-nav > ul {
-    line-height: 2em;
+} 
+
+nav.horizontalNavigation ul {
     list-style-type: none;
-    padding-left: 5px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lavender
 }
+
+nav.horizontalNavigation li {
+   display: block;
+   float: left;
+}
+
+nav.horizontalNavigation li a {
+   display: block;
+   color: mediumpurple;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   text-align: center;
+}  
+
+li a:hover {
+    background-color: lavenderblush;
+}  
+
+/* Left Column Styles */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#leftColumn {
+   clear: left;
+   float: left;
+   flex: 1;
+   padding: 1.5em;
+   width: auto;
+}
+
+/* Right Column Styles */
+
+section#rightColumn { 
+    clear: right;
+    float: right;
+    flex: 1;
+    padding: 1.5em;
+    width: auto;
+} 
+
 body > footer {
     background-color: lavender;
     color: mediumpurple;
     font: normal small-caps bold 0.9em/3em
           Quicksand, Verdana, Geneva, sans-serif;
-    text-align: center
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px
+} 
+
+footer {
+  background-color: mediumpurple;
+}
+
+footer a {
+  color: purple;
+  text-decoration: none;
+}
+
+footer a:hover {
+  background-color: lavenderblush;
 }
